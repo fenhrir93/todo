@@ -1,0 +1,11 @@
+<mat-list>
+  <mat-list-item *ngFor="let item of todoList" class="container">
+    <mat-card class="card">
+      <mat-card-content class="card__content">
+       <mat-checkbox [checked]="item.completed"></mat-checkbox>
+        {{item.title}}: {{item.description}} | {{item.time.from}}/{{item.time.to}}
+      </mat-card-content>
+      <mat-card-actions class="card__action"><button mat-icon-button><mat-icon>edit</mat-icon></button></mat-card-actions>
+    </mat-card>
+  </mat-list-item>
+</mat-list>

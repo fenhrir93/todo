@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  :hover {
+    background: #efefef;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__content {
+    padding: 12px;
+  }
+
+  &__action {
+
+  }
+}
+
